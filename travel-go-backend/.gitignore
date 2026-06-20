@@ -1,0 +1,15 @@
+# Backend
+travel-go-backend/venv/
+travel-go-backend/__pycache__/
+travel-go-backend/.env
+
+# Python
+*.pyc
+
+# Frontend
+travel-go-frontend/node_modules/
+travel-go-frontend/dist/
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,147 @@
+.route-banner {
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1a3a2a 60%,
+    #1a6b4a 100%
+  );
+  border-radius: 20px;
+  padding: 44px 48px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--space-6);
+}
+
+
+.route-banner__circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.route-banner__circle--1 {
+  width: 220px;
+  height: 220px;
+  top: -60px;
+  right: -40px;
+  background: rgba(244, 167, 66, 0.1);
+}
+
+.route-banner__circle--2 {
+  width: 160px;
+  height: 160px;
+  bottom: -50px;
+  right: 120px;
+  background: rgba(26, 107, 74, 0.25);
+}
+
+.route-banner__content {
+  position: relative;
+  z-index: 1;
+}
+
+
+.route-banner__badge {
+  margin-bottom: var(--space-4);
+}
+
+
+.route-banner__title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: var(--space-3);
+  line-height: 1.1;
+}
+
+.route-banner__arrow {
+  color: #f4a742;
+}
+
+
+.route-banner__desc {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: var(--space-5);
+}
+
+
+.route-banner__meta {
+  display: flex;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-5);
+}
+
+.route-banner__meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 500;
+}
+
+
+.route-banner__tags {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+}
+
+.route-banner__tag {
+  background: rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.route-banner__actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.route-banner__plan-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  background: linear-gradient(135deg, #f4a742, #e09230);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: var(--text-base);
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 14px rgba(244, 167, 66, 0.4);
+}
+
+.route-banner__plan-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(244, 167, 66, 0.5);
+  filter: brightness(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .route-banner {
+    padding: var(--space-6) var(--space-5);
+    border-radius: var(--radius-lg);
+  }
+
+  .route-banner__meta {
+    gap: var(--space-4);
+  }
+}

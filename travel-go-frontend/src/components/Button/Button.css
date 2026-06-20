@@ -1,0 +1,114 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  white-space: nowrap;
+  outline: none;
+  position: relative;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* ── VARIANTS ── */
+.btn--primary {
+  background: linear-gradient(135deg, #1a6b4a, #14523a);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(26, 107, 74, 0.3);
+}
+
+.btn--primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(26, 107, 74, 0.4);
+  filter: brightness(1.08);
+}
+
+.btn--secondary {
+  background: #ffffff;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background: var(--color-primary-light);
+  transform: translateY(-1px);
+}
+
+.btn--accent {
+  background: linear-gradient(135deg, #f4a742, #e09230);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(244, 167, 66, 0.3);
+}
+
+.btn--accent:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(244, 167, 66, 0.4);
+  filter: brightness(1.05);
+}
+
+.btn--danger {
+  background: var(--color-error);
+  color: #ffffff;
+}
+
+.btn--danger:hover:not(:disabled) {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-gray-600);
+  border: 1.5px solid var(--color-gray-200);
+}
+
+.btn--ghost:hover:not(:disabled) {
+  background: var(--color-gray-100);
+  color: var(--color-gray-800);
+}
+
+/* ── SIZES ── */
+.btn--sm {
+  padding: 6px 14px;
+  font-size: var(--text-sm);
+  border-radius: var(--radius-sm);
+}
+
+.btn--md {
+  padding: 10px 20px;
+  font-size: var(--text-base);
+}
+
+.btn--lg {
+  padding: 13px 28px;
+  font-size: var(--text-lg);
+  border-radius: var(--radius-md);
+}
+
+
+.btn--full {
+  width: 100%;
+}
+
+
+.btn__spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+  flex-shrink: 0;
+}

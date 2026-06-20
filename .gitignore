@@ -1,0 +1,12 @@
+# Frontend
+travel-go-frontend/travel-go/node_modules/
+travel-go-frontend/travel-go/dist/
+travel-go-frontend/travel-go/.env
+
+# Backend
+travel-go-backend/venv/
+travel-go-backend/.env
+travel-go-backend/__pycache__/
+**/__pycache__/
+**/*.pyc
+.DS_Store
