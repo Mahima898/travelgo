@@ -10,3 +10,4 @@ travel-go-backend/__pycache__/
 **/__pycache__/
 **/*.pyc
 .DS_Store
+.env
