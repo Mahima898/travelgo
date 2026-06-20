@@ -1,7 +1,7 @@
 # Frontend
-travel-go-frontend/travel-go/node_modules/
-travel-go-frontend/travel-go/dist/
-travel-go-frontend/travel-go/.env
+travel-go-frontend/node_modules/
+travel-go-frontend/dist/
+travel-go-frontend/.env
 
 # Backend
 travel-go-backend/venv/
