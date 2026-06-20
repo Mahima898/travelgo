@@ -9,5 +9,7 @@ travel-go-backend/.env
 travel-go-backend/__pycache__/
 **/__pycache__/
 **/*.pyc
+
+# OS
 .DS_Store
-.env
+Thumbs.db
