@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import logoImg from '../../assets/travelgoo.png';
 
 const Footer = () => (
   <footer className="footer">
@@ -11,9 +12,11 @@ const Footer = () => (
         {/* Brand */}
         <div className="footer__brand">
           <div className="footer__logo">
-            <img src="/src/assets/travelgoo.png"
-            alt="TravelGo Logo"
-            className="footer__logo-img"/>
+           <img
+  src={logoImg}
+  alt="TravelGo Logo"
+  className="footer__logo-img"
+/> 
             <span className="footer__logo-text">TravelGo</span>
             
           </div>

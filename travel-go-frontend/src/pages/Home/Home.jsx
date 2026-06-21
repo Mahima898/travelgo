@@ -179,7 +179,7 @@ const Home = () => {
     const loadRoutes = async () => {
       try {
         setLoading(true);
-        const res = await routeService.getPopular();
+        const res = await routeService.getPopular(6);
         setRoutes(res.data);
         setFilteredRoutes(res.data);
       } catch (err) {

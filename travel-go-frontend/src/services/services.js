@@ -13,7 +13,7 @@ export const routeService = {
   getById: (id) => api.get(`/routes/${id}`),
   search: (from, to) =>
     api.get('/routes/search', { params: { from, to } }),
-  getPopular: () => api.get('/routes/popular'),
+  getPopular: (limit = 6) => api.get(`/routes/popular?limit=${limit}`),
   getDestinationNames: () => api.get('/routes/destination-names'),
 };
 

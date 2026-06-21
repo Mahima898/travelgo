@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AppContext';
 import './Navbar.css';
+import logoImg from '../../src/assets/travelgoo.png';
 
 const Navbar = () => {
   const { user, isAuthenticated, isAdmin, logout } = useContext(AuthContext);
@@ -41,10 +42,10 @@ const Navbar = () => {
         {/* ── LOGO ── */}
       <NavLink to="/" className="navbar__logo">
   <img
-    src="/src/assets/travelgoo.png"
-    alt="TravelGo Logo"
-    className="navbar__logo-img"
-  />
+  src={logoImg}
+  alt="TravelGo Logo"
+  className="navbar__logo-img"
+/>
   <span className="navbar__logo-text">TravelGo</span>
 </NavLink>
         
