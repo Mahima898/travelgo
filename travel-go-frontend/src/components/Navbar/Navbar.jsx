@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AppContext';
 import './Navbar.css';
-import logoImg from '../../src/assets/travelgoo.png';
+import logoImg from '../../assets/travelgoo.png';
 
 const Navbar = () => {
   const { user, isAuthenticated, isAdmin, logout } = useContext(AuthContext);
